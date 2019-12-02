@@ -14,17 +14,20 @@
 
 body {
     background-color: #D9DBD4;
+
 }
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .container {
     margin-top: 40px;
     width: 1220px;
     height: 900px;
     background-color: blue;
+
 
 }
 
@@ -37,6 +40,7 @@ main {
     height: 100%;
     background-color: #EDEDED;
     float: left;
+
 }
 
 .notifications {
@@ -110,7 +114,7 @@ main {
 
 .search-bottom {
     height: 10%;
-    background-color: yellow;
+    background-color: white;
 }
 
 
@@ -171,4 +175,8 @@ main {
     margin-left: 100px;
     display: inline;
 
+}
+
+.msg-bottom {
+    
 }
