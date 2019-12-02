@@ -52,3 +52,10 @@ main {
     background-color: green;
 
 }
+
+.head-left img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+}
