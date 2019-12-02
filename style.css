@@ -11,8 +11,11 @@
     background-color: #009688;
 
 }*/
+
+body {
+    background-color: #D9DBD4;
+}
 main {
-    background-color: #D8DBD5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,15 +23,19 @@ main {
 .container {
     margin-top: 40px;
     width: 1220px;
-    height: 850px;
+    height: 900px;
     background-color: blue;
+
+}
+
+.message1 {
 
 }
 
 .left-chat {
     width: 400px;
     height: 100%;
-    background-color: red;
+    background-color: #EDEDED;
     float: left;
 }
 
@@ -39,6 +46,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .icona-campana {
@@ -69,7 +77,7 @@ main {
 .head-left {
     width: 100%;
     height: 70px;
-    background-color: yellow;
+    background-color: #EDEDED;
     display: flex;
     align-items: center;
 }
@@ -84,19 +92,27 @@ main {
 .right-chat {
     width: 820px;
     height: 100%;
-    background-color: black;
+    background-image: url("https://external-preview.redd.it/rEwFriCkfAtjOb5b-23b4tGGVcuvfaBqamYNJrgxnLM.png?auto=webp&s=f3bf0b5c90e4c5fda12ff2139781c854554fd198");
     float: right;
-    display: flex;
-    justify-content: center;
+
 }
 
 .head-right {
     width: 100%;
-    height: 70px;
-    background-color: green;
-
+    height: 10%;
+    background-color: #EDEDED;
 
 }
+
+.messaggi-chat {
+    height: 80%;
+}
+
+.search-bottom {
+    height: 10%;
+    background-color: yellow;
+}
+
 
 .head-left img {
     height: 60px;
@@ -154,9 +170,5 @@ main {
     color: grey;
     margin-left: 100px;
     display: inline;
-
-}
-
-footer {
 
 }
