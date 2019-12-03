@@ -31,9 +31,6 @@ main {
 
 }
 
-.message1 {
-
-}
 
 .left-chat {
     width: 400px;
@@ -98,14 +95,20 @@ main {
 
 }
 
+.imput-left {
+    margin-left: 20px;
+}
+
 .msg-left {
     width: 95%;
     height: 40px;
+    border-radius: 20px;
 
 }
 
 .chat-left-names {
     background-color: white;
+    overflow-y: scroll;
 }
 
 .text-box {
@@ -147,11 +150,8 @@ main {
 .messaggi-chat {
     height: 80%;
     border: 1px solid lightgrey;
-}
-
-.search-bottom {
-    height: 10%;
-    background-color: white;
+    padding: 30px;
+    overflow-y: scroll;
 }
 
 
@@ -203,6 +203,33 @@ main {
 
 }
 
-.msg-bottom {
+.search-bottom {
+    height: 12%;
+    background-color: white;
+    display: flex;
+    align-items: center;
 
 }
+
+.msg-bottom {
+    height: 40px;
+    width: 80%;
+    margin-left: 5%;
+
+}
+
+.fa-smile {
+    font-size: 30px;
+    color: lightgrey;
+    margin-left: 15px;
+}
+
+.fa-paper-plane {
+    margin-left: 30px;
+}
+
+
+/* notes for friday:
+1.overflow non funziona corretamente
+2. head icons 
+*/
