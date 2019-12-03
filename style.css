@@ -154,6 +154,28 @@ main {
     overflow-y: scroll;
 }
 
+.template {
+    display: none;
+}
+.received {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px;
+    clear: both;
+    float: left;
+}
+
+.message.sent {
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px;
+    float: right;
+    clear: both;
+}
 
 .head-left img {
     height: 60px;
@@ -231,5 +253,5 @@ main {
 
 /* notes for friday:
 1.overflow non funziona corretamente
-2. head icons 
+2. head icons
 */
