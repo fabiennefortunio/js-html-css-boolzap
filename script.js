@@ -16,6 +16,22 @@ $(document).ready(function() {
 
 });
 
+    $('input.msg-left').keyup(function(){
+        var testo_ricerca = $(this).val();
+        $('div.text-box').each(function() {
+            var nome_contatto = $(this).find('.friend-names').text();
+            if(testo_ricerca == nome_contatto) {
+                $(this).show();
+            } else {
+                $(this).hide()
+            }
+
+        });
+
+
+
+});
+
 function invia_messaggio() {
     var testo_messaggio = $('.msg-bottom').val();
     if(testo_messaggio.length != 0) {
@@ -29,13 +45,15 @@ function invia_messaggio() {
         $('.right-messages.active').append(nuovo_messaggio);
         //resetto l'imput con una stringa vuota
         $('.msg-bottom').val('');
-        //risposta del pc con scritto ok
-        risposta_computer();
+    
         setTimeout(risposta_computer, 1000);
 
     }
 
 }
+
+
+
 
 function risposta_computer() {
     // clono il template del invia_messaggio

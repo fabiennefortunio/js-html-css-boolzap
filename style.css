@@ -141,6 +141,10 @@ main {
 
 }
 
+.icons-right {
+    margin-left: 120px;
+}
+
 .messaggi-chat {
     height: 80%;
     border: 1px solid lightgrey;
