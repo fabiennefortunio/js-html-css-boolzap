@@ -13,7 +13,7 @@
 }*/
 
 body {
-    background-color: #D9DBD4;
+    background-color: lightgrey;
 
 }
 main {
@@ -87,13 +87,7 @@ main {
     border: 1px solid lightgrey;
 }
 
-.image-left {
 
-}
-
-.icons-head-left {
-
-}
 
 .imput-left {
     margin-left: 20px;
@@ -175,11 +169,13 @@ main {
     margin: 20px;
     float: right;
     clear: both;
+
+
 }
 
 .head-left img {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
 
 }
@@ -188,12 +184,12 @@ main {
     color: grey;
     margin-left: 100px;
     display: inline;
-    float: right;
+
 }
 
 .head-right img {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     margin-left: 15px;
 
