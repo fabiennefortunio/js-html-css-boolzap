@@ -7,6 +7,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <title></title>
     </head>
     <body>
@@ -104,20 +105,25 @@
                 <div class="messaggi-chat">
                     <div class="right-messages active">
                     </div>
-                    <div class="message received">
-                    </div>
-                <div class="message sent">
-                </div>
             </div>
 
 
-            <!-- Utilizziamo i template da clonare con js -->
-                <div class="template">
-                    <div class="message">
-                        <span class="message-text">Inserisci il messaggio con JS</span>
-                        <span class="message-time"></span>
-                    </div>
+
+
+        <!-- handlebar section -->
+
+
+
+        <script id="template-saluto" type="text/x-handlebars-template">
+
+            <div class="{{ classe }}">
+                <div class="message">
+                    <span class="message-text">{{ message }}</span>
+                    <span class="message-time"></span>
                 </div>
+            </div>
+
+        </script>
 
 
 

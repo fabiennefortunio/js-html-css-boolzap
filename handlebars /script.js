@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+/*
     // invio il messagio
     //intercetto il click
     $('.icona-send').click(function() {
@@ -45,7 +47,7 @@ function invia_messaggio() {
         $('.right-messages.active').append(nuovo_messaggio);
         //resetto l'imput con una stringa vuota
         $('.msg-bottom').val('');
-    
+
         setTimeout(risposta_computer, 1000);
 
     }
@@ -65,4 +67,32 @@ function risposta_computer() {
     //inserisco il messaggio al interno del container
     $('.right-messages.active').append(messaggio_risposta);
 
+
+*/
+$('.msg-bottom').keyup(function(event) {
+    if(event.which == 13){
+        enviarMensaje("sent");
+        enviarMensaje("received");
+// La función tiene un parametro que si es 'sent', el ternario cogerá el input,
+// y si no es sent, pues enviará OK. Y la clase añadida es el parametro.
+    }
+});
+function enviarMensaje(who) {
+
+ var template_html = $('#template-saluto').html();
+ var template_function = Handlebars.compile(template_html);
+ var variabili = {
+       'message': (who=="sent") ? read_message() : "ok",
+       'classe' : 'message ' + who
+   };
+
+   function read_message() {
+       var message = $('.msg-bottom').val();
+       $('.msg-bottom').val('');
+       return message;
+   };
+
+   var html_finale = template_function(variabili);
+   $('.right-messages').append(html_finale);
 }
+});
